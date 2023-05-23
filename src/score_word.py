@@ -44,7 +44,8 @@ def get_letter_scores(word: str, guess: str) -> list:
         return [2] * w_len
 
     # initialise the result list
-    result = [0] * len(word)
+    result = [0] * w_len
+
     # convert the word and guess to lists
     word_list = list(word)
     guess_list = list(guess)
